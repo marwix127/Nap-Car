@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".HelpActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/backgroundBody_general"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="85dp"
+        android:background="#A6A5E8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="VisualLintOverlap" />
+
+    <ImageView
+        android:id="@+id/separator1_general"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="-10dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/layoutseparator" />
+
+    <ImageView
+        android:id="@+id/separator2_general"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelhelp_options"
+        app:srcCompat="@drawable/layoutseparator" />
+
+    <ImageView
+        android:id="@+id/separator3_general"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="65dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/layoutseparator"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/vehicleimage_general"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/vehiclesbutton" />
+
+    <TextView
+        android:id="@+id/vehicletext_general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/vehicleButton"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck,VisualLintOverlap" />
+
+    <Button
+        android:id="@+id/vehiclebutton_general"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        app:backgroundTint="#00FFBF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/garageimage_general"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vehicleimage_general"
+        app:srcCompat="@drawable/garagebutton" />
+
+    <TextView
+        android:id="@+id/garagetext_general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/garageButton"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck,VisualLintOverlap" />
+
+    <Button
+        android:id="@+id/garagebutton_general"
+        android:layout_width="73dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginBottom="4dp"
+        android:background="#00FFBF00"
+        android:text="@string/whiteSpace"
+        android:textColor="#00FFFFFF"
+        app:backgroundTint="#43FFBF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/homeimage_general"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="-4dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/homebutton"
+        tools:ignore="ImageContrastCheck,VisualLintBounds" />
+
+    =======
+
+    <Button
+        android:id="@+id/homebutton_general"
+        android:layout_width="90dp"
+        android:layout_height="85dp"
+        android:text="@string/whiteSpace"
+        android:textColor="#00FFFFFF"
+        app:backgroundTint="#00FFBF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/optionsimage_general"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/helpimage_general"
+        app:srcCompat="@drawable/optionsbutton" />
+
+    <TextView
+        android:id="@+id/optionstext_general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="89dp"
+        android:layout_marginRight="89dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/optionsButton"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck,VisualLintOverlap" />
+
+    <Button
+        android:id="@+id/optionsbutton_general"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="#00FFBF00"
+        android:text="@string/whiteSpace"
+        android:textColor="#00FFFFFF"
+        app:backgroundTint="#43FFBF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/helpimage_general"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/helpbutton" />
+
+    <TextView
+        android:id="@+id/helptext_general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/helpButton"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/helpbutton_general"
+        android:layout_width="76dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="-4dp"
+        android:background="#FFBF00"
+        android:text="@string/whiteSpace"
+        android:textColor="#00FFFFFF"
+        app:backgroundTint="#43FFBF00"
+        app:layout_constraintBottom_toBottomOf="@+id/helptext_general"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/optionsimage_general"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/labelhelp_options"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Comprobar nivel de Aceite"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/backgroundBody_general"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator1_general"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pasos para Medir el Nivel de Aceite:"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Localizar la Varilla Medidora:\n  Abre el capó del coche.\n Localiza la varilla medidora de aceite. Normalmente tiene un mango de color brillante (amarillo o naranja) para facilitar su identificación.\n  "
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="270dp"
+                app:srcCompat="@drawable/captura_de_pantalla_2024_05_18_172832" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Extraer la Varilla:\n  Saca la varilla medidora y límpiala con un trapo limpio o una toalla de papel para eliminar el aceite. \nMedir el Nivel de Aceite:\n  Vuelve a insertar la varilla completamente en su tubo, luego sácala de nuevo. Observa el nivel de aceite en la varilla. La varilla tendrá dos marcas (mínima y máxima). El nivel de aceite debe estar entre estas dos marcas. \nInterpretar la Lectura:\n  Si el nivel de aceite está cerca de la marca mínima, necesitas agregar más aceite. Si está entre las marcas mínima y máxima, el nivel es adecuado. Si el nivel de aceite está por encima de la marca máxima, puede ser necesario eliminar algo de aceite, ya que un exceso puede dañar el motor. \nAñadir Aceite si es Necesario:\n  Si necesitas agregar aceite, quita la tapa de llenado de aceite (normalmente ubicada en la parte superior del motor). Usa un embudo para verter el aceite lentamente y con cuidado. Después de añadir aceite, espera unos minutos y vuelve a medir el nivel para asegurarte de no haber agregado demasiado."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

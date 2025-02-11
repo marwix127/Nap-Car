@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">NapCar</string>
+
+    //GENERAL
+    <string name="profileText">Perfil</string>
+    <string name="vehiclesText">Vehículos registrados:</string>
+    <string name="alertsText">Recordatorios/Alertas pendientes:</string>
+    <string name="whiteSpace">.</string>
+
+    //BUTTONS
+    <string name="vehicleButton">Vehículos</string>
+    <string name="garageButton">Talleres</string>
+    <string name="optionsButton">Opciones</string>
+    <string name="helpButton">Ayuda</string>
+
+    //START
+    <string name="Login">LogIn</string>
+    <string name="Correo">Correo electrónico</string>
+    <string name="Contraseña">Constraseña</string>
+    <string name="no_dispone_cuenta">Si no dispones de una cuenta puedes crearla aquí:</string>
+    <string name="Nap_Car_SL">Nap-Car S.L.</string>
+    <string name="Copyright">2023-Copyright</string>
+    <string name="Iniciar_sesión">Iniciar sesión</string>
+    <string name="Crear_cuenta">Crear cuenta</string>
+
+    //VEHICLES
+    <string name="Vehiculos_del_usuario">VEHÍCULOS DEL USUARIO</string>
+    <string name="Vehiculo1">Vehículo</string>
+    <string name="Separador1">-</string>
+    <string name="Separador2">|</string>
+    <string name="Kilometros">km</string>
+    <string name="Potencia">CV</string>
+    <string name="Alertas">Alertas:</string>
+    <string name="Informacion_detallada">Información detallada</string>
+    <string name="Registrar_nuevo_vehiculo">Registrar nuevo vehículo</string>
+
+    //REGISTRO E INFO VEHICULOS
+    <string name="Info_vehiculo">INFO DEL VEHÍCULO</string>
+    <string name="Marca_vehiculo">Marca del vehículo:*</string>
+    <string name="Modelo_vehiculo">Modelo:*</string>
+    <string name="Anio_vehiculo">Año:*</string>
+    <string name="Motor_vehiculo">Motor:</string>
+    <string name="Potencia_vehiculo">Potencia (CV):</string>
+    <string name="Kilometros_vehiculo">Kilometros (km):*</string>
+    <string name="Matricula_vehiculo">Matrícula:*</string>
+    <string name="Combustible_vehiculo">Combustible:*</string>
+    <string name="Fecha_ITV_vehiculo">Fecha última ITV:*</string>
+    <string name="Aceite_km_vehiculo">Último cambio de aceite (km):</string>
+    <string name="Fecha_aceite_vehiculo">Fecha último cambio de aceite:</string>
+    <string name="Boton_volver">Volver</string>
+    <string name="Boton_editar">Editar</string>
+    <string name="Boton_guardar">Guardar</string>
+
+    <string name="Hint_marca_vehiculo">ej. Seat</string>
+    <string name="Hint_modelo_vehiculo">ej. Ibiza</string>
+    <string name="Hint_anio_vehiculo">ej. 2018</string>
+    <string name="Hint_motor_vehiculo">ej 1.9 CDI</string>
+    <string name="Hint_potencia_vehiculo">ej. 139</string>
+    <string name="Hint_kilometros_vehiculo">ej. 185.000 (sin km)</string>
+    <string name="Hint_matricula_vehiculo">ej. 1856DBL</string>
+    <string name="Hint_combustible_vehiculo">ej. Diesel</string>
+    <string name="Hint_fecha_ITV_vehiculo">ej. 20/04/2024</string>
+    <string name="Hint_aceite_km_vehiculo">ej 180.000 (sin km)</string>
+    <string name="Hint_fecha_aceite_vehiculo">ej. 05/01/2024</string>
+    <string name="Parametros_obligatorios_vehiculo">Parametros con * son obligatorios</string>
+
+    //PERFIL USER
+    <string name="Titulo_perfil">PERFIL DEL USUARIO</string>
+    <string name="Nombre_perfil">Nombre:</string>
+    <string name="Apellidos_perfil">Apellidos:</string>
+    <string name="Email_perfil">Correo electrónico:</string>
+    <string name="Telefono_perfil">Teléfono:</string>
+
+    <string name="Titulo_editarPerfil">EDITAR PERFIL</string>
+    <string name="Nombre_editarPerfil">Nombre:*</string>
+    <string name="Apellidos_editarPerfil">Apellidos:*</string>
+    <string name="Email_editarPerfil">Correo electrónico:*</string>
+    <string name="Parametros_obligatorios_editarPerfil">Parametros con * son obligatorios</string>
+
+    <string name="Hint_nombre_perfil">Nombre</string>
+    <string name="Hint_apellidos_perfil">Apellido</string>
+    <string name="Hint_email_perfil">ej. cristian48@gmail.com</string>
+    <string name="Hint_telefono_perfil">ej. 645805149</string>
+
+
+    <string name="BotonEditar_perfil">Editar</string>
+    <string name="BotonGuardar_perfil">Guardar</string>
+    <string name="BotonVolver_perfil">Volver</string>
+
+
+
+    //GARAGE
+    <string name="Busqueda_talleres">Búsqueda de talleres</string>
+
+    //HOME
+    <string name="Recordatorio_alertas">RECORDATORIOS Y ALERTAS</string>
+
+    //CREATE ALERTS
+    <string name="Crear_recordatorio">Crear nuevo recordatorio</string>
+    <string name="Escribe_recordatorio">Escribe tu recordatorio</string>
+    <string name="volver">VOLVER</string>
+    <string name="crear">CREAR</string>
+
+    //ALERTS
+    <string name="editar_recordatorio">Editar recordatorio</string>
+    <string name="editar">EDITAR</string>
+
+    //OPTIONS
+    <string name="Opciones">Opciones</string>
+    <string name="login">Login</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="registro">Registro</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="correo">Correo</string>
+    <string name="nombre">Nombre</string>
+    <string name="nap_car_s_l">Nap-Car S.L.</string>
+    <string name="_2023_copyright">2023-Copyright</string>
+    <string name="si_no_dispones_de_una_cuenta_puedes_crearla_aqu">Si no dispones de una cuenta puedes crearla aquí:</string>
+    <string name="introduce_tu_direcci_n_de_correo_electr_nico">Introduce tu dirección de correo electrónico</string>
+    <string name="introduce_tu_nombre">Introduce tu nombre</string>
+    <string name="introduce_tu_contrase_a">Introduce tu contraseña</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="introduce_tus_apellidos">Introduce tus Apellidos</string>
+
+    //HELP
+
+
+</resources>

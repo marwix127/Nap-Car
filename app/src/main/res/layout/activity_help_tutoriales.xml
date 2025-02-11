@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".HelpActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/backgroundBody_general"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="85dp"
+        android:background="#A6A5E8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="VisualLintOverlap" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="98dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/separator2_general5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/_266107" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/Widget.MaterialComponents.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="344dp"
+        android:text="Neumaticos"
+        android:textColor="#3C4FFA"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator2_general" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/Widget.MaterialComponents.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="232dp"
+        android:text="Motor"
+        android:textColor="#3C4FFA"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator2_general" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="124dp"
+        android:text="Limpiaparabrisas"
+        android:textColor="#3C4FFA"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator2_general" />
+
+    <ImageView
+        android:id="@+id/separator2_general5"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="440dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelhelp_options"
+        app:srcCompat="@drawable/layoutseparator" />
+
+    <ImageView
+        android:id="@+id/separator2_general4"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="330dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelhelp_options"
+        app:srcCompat="@drawable/layoutseparator" />
+
+    <ImageView
+        android:id="@+id/separator2_general3"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="220dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelhelp_options"
+        app:srcCompat="@drawable/layoutseparator" />
+
+    <ImageView
+        android:id="@+id/separator2_general2"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="110dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelhelp_options"
+        app:srcCompat="@drawable/layoutseparator" />
+
+    <ImageView
+        android:id="@+id/separator1_general"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="-10dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/layoutseparator" />
+
+    <ImageView
+        android:id="@+id/separator2_general"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelhelp_options"
+        app:srcCompat="@drawable/layoutseparator" />
+
+    <ImageView
+        android:id="@+id/separator3_general"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="65dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/layoutseparator"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/vehicleimage_general"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/vehiclesbutton" />
+
+    <TextView
+        android:id="@+id/vehicletext_general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/vehicleButton"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck,VisualLintOverlap" />
+
+    <Button
+        android:id="@+id/vehiclebutton_general"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        app:backgroundTint="#00FFBF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/garageimage_general"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vehicleimage_general"
+        app:srcCompat="@drawable/garagebutton" />
+
+    <TextView
+        android:id="@+id/garagetext_general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/garageButton"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck,VisualLintOverlap" />
+
+    <Button
+        android:id="@+id/garagebutton_general"
+        android:layout_width="73dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginBottom="4dp"
+        android:background="#00FFBF00"
+        android:text="@string/whiteSpace"
+        android:textColor="#00FFFFFF"
+        app:backgroundTint="#43FFBF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/homeimage_general"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="-4dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/homebutton"
+        tools:ignore="ImageContrastCheck,VisualLintBounds" />
+
+    =======
+
+    <Button
+        android:id="@+id/homebutton_general"
+        android:layout_width="90dp"
+        android:layout_height="85dp"
+        android:text="@string/whiteSpace"
+        android:textColor="#00FFFFFF"
+        app:backgroundTint="#00FFBF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/optionsimage_general"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/helpimage_general"
+        app:srcCompat="@drawable/optionsbutton" />
+
+    <TextView
+        android:id="@+id/optionstext_general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="89dp"
+        android:layout_marginRight="89dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/optionsButton"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck,VisualLintOverlap" />
+
+    <Button
+        android:id="@+id/optionsbutton_general"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="#00FFBF00"
+        android:text="@string/whiteSpace"
+        android:textColor="#00FFFFFF"
+        app:backgroundTint="#43FFBF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/helpimage_general"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/helpbutton" />
+
+    <TextView
+        android:id="@+id/helptext_general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/helpButton"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/helpbutton_general"
+        android:layout_width="76dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="-4dp"
+        android:background="#FFBF00"
+        android:text="@string/whiteSpace"
+        android:textColor="#00FFFFFF"
+        app:backgroundTint="#43FFBF00"
+        app:layout_constraintBottom_toBottomOf="@+id/helptext_general"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/optionsimage_general"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/labelhelp_options"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="AYUDA"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/backgroundBody_general"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator1_general"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_aceite"
+        style="@style/Widget.MaterialComponents.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Nivel de Aceite"
+        android:textColor="#3C4FFA"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator2_general" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="91dp"
+        android:layout_height="99dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="-20dp"
+        app:layout_constraintBottom_toTopOf="@+id/separator2_general2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/_823509" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="112dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="-10dp"
+        app:layout_constraintBottom_toTopOf="@+id/separator2_general3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/_5154" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="115dp"
+        android:layout_height="99dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="-10dp"
+        app:layout_constraintBottom_toTopOf="@+id/separator2_general4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/_711920" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
