@@ -1,4 +1,4 @@
-package es.ifp.napcar;
+package es.ifp.napcar.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,11 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
-import java.util.PrimitiveIterator;
+
+import es.ifp.napcar.R;
+import es.ifp.napcar.service.BBDDVehiculos;
+import es.ifp.napcar.service.BaseDeDatos;
+import es.ifp.napcar.service.DatabaseSQL;
 
 public class VehiculosActivity extends AppCompatActivity {
 
@@ -59,7 +63,7 @@ public class VehiculosActivity extends AppCompatActivity {
 
     //Gestion BBDD
     protected DatabaseSQL db;
-    protected BasecitaDeDatos db2;
+    protected BaseDeDatos db2;
     protected BBDDVehiculos db3;
     protected String[] vehiculo = new String[11];
 
@@ -78,7 +82,7 @@ public class VehiculosActivity extends AppCompatActivity {
 
         //Inicializamos BBDD
         db = new DatabaseSQL(VehiculosActivity.this);
-        db2 = new BasecitaDeDatos(VehiculosActivity.this);
+        db2 = new BaseDeDatos(VehiculosActivity.this);
         db3 = new BBDDVehiculos(VehiculosActivity.this);
 
         //Limpieza de tablas

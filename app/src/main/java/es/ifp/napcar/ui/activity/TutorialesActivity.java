@@ -1,4 +1,4 @@
-package es.ifp.napcar;
+package es.ifp.napcar.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,47 +7,32 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import java.util.ArrayList;
+import es.ifp.napcar.R;
 
-public class HelpActivity extends AppCompatActivity {
-
-    private TextView userName;
-    private TextView vehiclesNumber;
-    private TextView alertsNumber;
-    private Button profileButton;
+public class TutorialesActivity extends AppCompatActivity {
+    private Intent pasarPantalla;
+    private TextView aceite;
     private Button button1;
     private Button button2;
     private Button button3;
     private Button button4;
     private Button button5;
-    private TextView tutoriales;
-
-    private Intent pasarPantalla;
-    private DatabaseSQL db;
-    private BasecitaDeDatos db2;
 
     private Bundle extras;
     private String[] paquete;
     private int userId=0;
-    private ArrayList<String> userNameBBDD = new ArrayList<String>();
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_help);
-
+        setContentView(R.layout.activity_help_tutoriales);
+        aceite = findViewById(R.id.textView_aceite);
         button1 = (Button) findViewById(R.id.vehiclebutton_general);
         button2 = (Button) findViewById(R.id.garagebutton_general);
         button3 = (Button) findViewById(R.id.homebutton_general);
         button4 = (Button) findViewById(R.id.optionsbutton_general);
         button5 = (Button) findViewById(R.id.helpbutton_general);
-        tutoriales = (TextView) findViewById(R.id.textView_tutoriales);
 
         try{
             extras = getIntent().getExtras();
@@ -55,14 +40,15 @@ public class HelpActivity extends AppCompatActivity {
                 paquete = new String[]{extras.getString("USERID")};
                 userId = Integer.parseInt(paquete[0]);
             }
+
         }catch(Exception e){
             Toast.makeText(this, "Ha ocurrido un error con la base de datos.", Toast.LENGTH_SHORT).show();
         }
 
-        tutoriales.setOnClickListener(new View.OnClickListener() {
+        aceite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                pasarPantalla = new Intent(HelpActivity.this, TutorialesActivity.class);
+                pasarPantalla = new Intent(TutorialesActivity.this, Tutoriales_Aceite.class);
                 pasarPantalla.putExtra("USERID", Integer.toString(userId));
                 finish();
                 startActivity(pasarPantalla);
@@ -71,7 +57,7 @@ public class HelpActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() { //Botón Vehículos
             @Override
             public void onClick(View v) {
-                pasarPantalla = new Intent(HelpActivity.this, VehiculosActivity.class);
+                pasarPantalla = new Intent(TutorialesActivity.this, VehiculosActivity.class);
                 pasarPantalla.putExtra("USERID", Integer.toString(userId));
                 finish();
                 startActivity(pasarPantalla);
@@ -80,7 +66,7 @@ public class HelpActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() { //Botón Talleres
             @Override
             public void onClick(View v) {
-                pasarPantalla = new Intent (HelpActivity.this, TalleresActivity.class);
+                pasarPantalla = new Intent (TutorialesActivity.this, TalleresActivity.class);
                 pasarPantalla.putExtra("USERID", Integer.toString(userId));
                 finish();
                 startActivity(pasarPantalla);
@@ -89,7 +75,7 @@ public class HelpActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() { //Botón Home
             @Override
             public void onClick(View v) {
-                pasarPantalla = new Intent (HelpActivity.this, HomeActivity.class);
+                pasarPantalla = new Intent (TutorialesActivity.this, HomeActivity.class);
                 pasarPantalla.putExtra("USERID", Integer.toString(userId));
                 finish();
                 startActivity(pasarPantalla);
@@ -98,7 +84,7 @@ public class HelpActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() { //Botón Opciones
             @Override
             public void onClick(View v) {
-                pasarPantalla = new Intent (HelpActivity.this, OptionsActivity.class);
+                pasarPantalla = new Intent (TutorialesActivity.this, OptionsActivity.class);
                 pasarPantalla.putExtra("USERID", Integer.toString(userId));
                 finish();
                 startActivity(pasarPantalla);
@@ -107,11 +93,15 @@ public class HelpActivity extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() { //Botón Ayuda
             @Override
             public void onClick(View v) {
-                pasarPantalla = new Intent (HelpActivity.this, HelpActivity.class);
+                pasarPantalla = new Intent (TutorialesActivity.this, HelpActivity.class);
                 pasarPantalla.putExtra("USERID", Integer.toString(userId));
                 finish();
                 startActivity(pasarPantalla);
             }
         });
     }
+
+
+
+
 }

@@ -1,4 +1,4 @@
-package es.ifp.napcar;
+package es.ifp.napcar.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import es.ifp.napcar.R;
+import es.ifp.napcar.service.DatabaseSQL;
 
 public class RegisterActivity extends AppCompatActivity {
     protected DatabaseSQL db;

@@ -1,4 +1,4 @@
-package es.ifp.napcar;
+package es.ifp.napcar.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,13 +8,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
+
+import es.ifp.napcar.R;
+import es.ifp.napcar.service.BBDDVehiculos;
+import es.ifp.napcar.service.BaseDeDatos;
+import es.ifp.napcar.service.DatabaseSQL;
 
 public class RegistroVehiculosActivity extends AppCompatActivity {
 
@@ -72,7 +73,7 @@ public class RegistroVehiculosActivity extends AppCompatActivity {
     private Intent pasarPantalla;
     //Gestion BBDD
     private DatabaseSQL db;
-    private BasecitaDeDatos db2;
+    private BaseDeDatos db2;
     protected BBDDVehiculos db3;
 
     //Para recivir el paquete con el id del vehiculo
@@ -95,7 +96,7 @@ public class RegistroVehiculosActivity extends AppCompatActivity {
 
         //Inicializamos BBDD
         db = new DatabaseSQL(RegistroVehiculosActivity.this);
-        db2 = new BasecitaDeDatos(RegistroVehiculosActivity.this);
+        db2 = new BaseDeDatos(RegistroVehiculosActivity.this);
         db3 = new BBDDVehiculos(RegistroVehiculosActivity.this);
 
         userName = (TextView) findViewById(R.id.username_general);

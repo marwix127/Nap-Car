@@ -1,4 +1,4 @@
-package es.ifp.napcar;
+package es.ifp.napcar.service;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
@@ -8,15 +8,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import androidx.annotation.Nullable;
-
 import java.util.ArrayList;
 
-public class BasecitaDeDatos extends SQLiteOpenHelper {
+public class BaseDeDatos extends SQLiteOpenHelper {
 
     protected SQLiteDatabase db;
 
-    public BasecitaDeDatos(Context context) {
+    public BaseDeDatos(Context context) {
         super(context, "pruebitas", null, 1);
     }
 

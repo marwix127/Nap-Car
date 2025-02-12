@@ -1,6 +1,5 @@
-package es.ifp.napcar;
+package es.ifp.napcar.ui.activity;
 
-import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +16,11 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+
+import es.ifp.napcar.R;
+import es.ifp.napcar.service.BBDDVehiculos;
+import es.ifp.napcar.service.BaseDeDatos;
+import es.ifp.napcar.service.DatabaseSQL;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -35,7 +39,7 @@ public class HomeActivity extends AppCompatActivity {
     private Intent pasarPantalla;
     //Gestion BBDD
     protected DatabaseSQL db;
-    protected BasecitaDeDatos db2;
+    protected BaseDeDatos db2;
     protected BBDDVehiculos db3;
 
     private ArrayList<String> alerts = new ArrayList<String>();
@@ -56,7 +60,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         db = new DatabaseSQL(HomeActivity.this);
-        db2 = new BasecitaDeDatos(HomeActivity.this);
+        db2 = new BaseDeDatos(HomeActivity.this);
         db3 = new BBDDVehiculos(HomeActivity.this);
 
 

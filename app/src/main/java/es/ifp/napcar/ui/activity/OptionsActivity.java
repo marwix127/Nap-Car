@@ -1,4 +1,4 @@
-package es.ifp.napcar;
+package es.ifp.napcar.ui.activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -6,20 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import es.ifp.napcar.R;
+import es.ifp.napcar.service.BBDDVehiculos;
+import es.ifp.napcar.service.BaseDeDatos;
+import es.ifp.napcar.service.DatabaseSQL;
 
 public class OptionsActivity extends AppCompatActivity {
 
@@ -59,7 +59,7 @@ public class OptionsActivity extends AppCompatActivity {
     private Intent pasarPantalla;
     //Gestion BBDD
     protected DatabaseSQL db;
-    protected BasecitaDeDatos db2;
+    protected BaseDeDatos db2;
     protected BBDDVehiculos db3;
 
     private Bundle extras;
@@ -73,7 +73,7 @@ public class OptionsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_options);
 
         db = new DatabaseSQL(OptionsActivity.this);
-        db2 = new BasecitaDeDatos(OptionsActivity.this);
+        db2 = new BaseDeDatos(OptionsActivity.this);
         db3 = new BBDDVehiculos(OptionsActivity.this);
 
         userName = (TextView) findViewById(R.id.username_general);

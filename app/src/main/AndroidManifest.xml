@@ -13,49 +13,49 @@
         android:theme="@style/Theme.NapCar"
         tools:targetApi="31">
         <activity
-            android:name=".EditarPerfilActivity"
+            android:name=".ui.activity.EditarPerfilActivity"
             android:exported="false" />
         <activity
-            android:name=".PerfilUserActivity"
+            android:name=".ui.activity.PerfilUserActivity"
             android:exported="false" />
         <activity
-            android:name=".AlertsActivity"
+            android:name=".ui.activity.AlertsActivity"
             android:exported="false" />
         <activity
-            android:name=".CreateAlertsActivity"
+            android:name=".ui.activity.CreateAlertsActivity"
             android:exported="false" />
         <activity
-            android:name=".InfoVehiculosActivity"
+            android:name=".ui.activity.InfoVehiculosActivity"
             android:exported="false" />
         <activity
-            android:name=".RegistroVehiculosActivity"
+            android:name=".ui.activity.RegistroVehiculosActivity"
             android:exported="false" />
         <activity
-            android:name=".VehiculosActivity"
+            android:name=".ui.activity.VehiculosActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".ui.activity.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".ui.activity.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".OptionsActivity"
+            android:name=".ui.activity.OptionsActivity"
             android:exported="false" />
         <activity
-            android:name=".TalleresActivity"
+            android:name=".ui.activity.TalleresActivity"
             android:exported="false" />
         <activity
-            android:name=".HelpActivity"
+            android:name=".ui.activity.HelpActivity"
             android:exported="false" />
         <activity
-            android:name=".TutorialesActivity"
+            android:name=".ui.activity.TutorialesActivity"
             android:exported="false" />
         <activity
-            android:name=".Tutoriales_Aceite"
+            android:name=".ui.activity.Tutoriales_Aceite"
             android:exported="false"/>
         <activity
-            android:name=".StartActivity"
+            android:name=".ui.activity.StartActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

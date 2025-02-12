@@ -1,4 +1,4 @@
-package es.ifp.napcar;
+package es.ifp.napcar.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,11 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+
+import es.ifp.napcar.R;
+import es.ifp.napcar.service.BBDDVehiculos;
+import es.ifp.napcar.service.BaseDeDatos;
+import es.ifp.napcar.service.DatabaseSQL;
 
 public class CreateAlertsActivity extends AppCompatActivity {
 
@@ -31,7 +36,7 @@ public class CreateAlertsActivity extends AppCompatActivity {
     private Intent pasarPantalla;
     //Gestion BBDD
     protected DatabaseSQL db;
-    protected BasecitaDeDatos db2;
+    protected BaseDeDatos db2;
     protected BBDDVehiculos db3;
 
     private String alert="";
@@ -47,7 +52,7 @@ public class CreateAlertsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_createalerts);
 
         db = new DatabaseSQL(CreateAlertsActivity.this);
-        db2 = new BasecitaDeDatos(CreateAlertsActivity.this);
+        db2 = new BaseDeDatos(CreateAlertsActivity.this);
         db3 = new BBDDVehiculos(CreateAlertsActivity.this);
 
 

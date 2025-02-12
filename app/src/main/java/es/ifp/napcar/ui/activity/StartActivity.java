@@ -1,4 +1,4 @@
-package es.ifp.napcar;
+package es.ifp.napcar.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import es.ifp.napcar.R;
+import es.ifp.napcar.service.DatabaseSQL;
 
 public class StartActivity extends AppCompatActivity {
 
