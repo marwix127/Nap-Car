@@ -1,28 +1,28 @@
 # Nap-Car 🚗
 
-Nap-Car es una aplicación Android diseñada para ayudar a los usuarios a gestionar el mantenimiento de sus vehículos de manera eficiente. Ofrece funcionalidades como información, tutoriales, alertas, registro de revisiones y la búsqueda de talleres.
+Nap-Car is an Android application designed to help users efficiently manage their vehicle maintenance. It offers functionalities such as information, tutorials, alerts, service history logging, and workshop search.
 
-## Tecnologías utilizadas
+## Technologies Used
 
-- **Lenguaje**: Java
-- **Base de datos**: SQL
+- **Language**: Java
+- **Database**: SQL
 
-## Características principales
+## Main Features
 
-- **Información y tutoriales**: Accede a contenido relevante para el mantenimiento de tu vehículo.
-- **Alertas**: Recibe notificaciones para realizar tareas de mantenimiento o revisiones programadas.
-- **Registro de revisiones**: Mantén un historial de las revisiones de tu vehículo.
-- **Búsqueda de talleres**: Encuentra talleres cercanos para la reparación o mantenimiento de tu vehículo.
+- **Information and Tutorials**: Access relevant content for vehicle maintenance.
+- **Alerts**: Receive notifications for scheduled maintenance tasks or inspections.
+- **Service History Logging**: Keep a record of your vehicle's inspections.
+- **Workshop Search**: Find nearby workshops for vehicle repairs or maintenance.
 
-## Estado del proyecto
+## Project Status
 
-Este proyecto está actualmente en **beta**. Está en desarrollo y se está mejorando constantemente.
+This project is currently in **beta**. It is under development and constantly improving.
 
-## Instalación
+## Installation
 
-El proyecto se debe abrir en AndroidStudio y ejecutarlo en el emulador o en un dispositivo fisico conectado.
+The project should be opened in Android Studio and run on an emulator or a connected physical device.
 
 ---
 
-¡Gracias por tu interés! Para más información o preguntas, contáctame directamente.
+Thank you for your interest! For more information or questions, feel free to contact me directly.
 
